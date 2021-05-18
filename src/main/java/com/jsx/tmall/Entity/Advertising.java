@@ -1,0 +1,27 @@
+package com.jsx.tmall.Entity;
+
+import lombok.*;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="Advertising")
+@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Advertising {
+
+    @SequenceGenerator(name = "generator", sequenceName = "SEQ_SYS_ORG_NODE", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "generator")
+    @Id
+    private long id;
+
+    private String name;
+
+    private String source;
+
+    private String description;
+
+}
