@@ -1,4 +1,4 @@
-package com.jsx.tmall.Entity;
+package com.jsx.tmall.Entity.ad;
 
 import lombok.*;
 
@@ -13,8 +13,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Advertising {
 
-    @SequenceGenerator(name = "generator", sequenceName = "SEQ_SYS_ORG_NODE", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "generator")
     @Id
     private long id;
 
